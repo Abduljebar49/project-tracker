@@ -14,6 +14,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { ProjectsComponent } from './projects/projects.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -22,7 +24,9 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
   declarations: [
     AppComponent,
     NavbarComponent,
-    TodoComponent
+    TodoComponent,
+    ProjectsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
