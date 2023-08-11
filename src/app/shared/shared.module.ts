@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ProjectCardComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    // ProjectCardComponent
+  ],
+  exports:[
+    ProjectCardComponent
   ]
 })
 export class SharedModule { }
