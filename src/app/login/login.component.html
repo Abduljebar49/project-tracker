@@ -1,20 +1,21 @@
-<div class="wrapper">
+<div class="wrapper bg-black">
     <div class="logo">
-        <img src="https://www.freepnglogos.com/uploads/android-logo-png/android-logo-android-brings-heif-media-format-that-apple-supports-13.png" alt="">
+        <img src="https://www.freepnglogos.com/uploads/android-logo-png/android-logo-android-brings-heif-media-format-that-apple-supports-13.png"
+            alt="">
     </div>
-    <div class="text-center text-white mt-4 name">
+    <div class="text-center text-white mt-4 name ">
         Project Tracker
     </div>
     <form class="p-3 mt-3">
         <div class="form-field d-flex align-items-center">
             <span class="far fa-user"></span>
-            <input type="text"  [(ngModel)]="username" name="username" id="username" placeholder="username">
+            <input type="text" [(ngModel)]="username" name="username" id="username" placeholder="username">
         </div>
         <div class="form-field d-flex align-items-center">
             <span class="fas fa-key"></span>
             <input type="password" [(ngModel)]="password" name="password" id="pwd" placeholder="Password">
         </div>
-        <button class="btn mt-3"(click)="login(username,password)">Login</button>
+        <button class="btn mt-3" (click)="login(username,password)">Login</button>
     </form>
     <div class="text-center fs-6">
         <a href="#">Forget password?</a> or <a href="#">Sign up</a>
