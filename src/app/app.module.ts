@@ -18,6 +18,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from './shared/shared.module';
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
+import { NewProjectComponent } from './new-project/new-project.component';
 
 
 
@@ -28,7 +29,8 @@ import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
     NavbarComponent,
     TodoComponent,
     ProjectsComponent,
-    LoginComponent
+    LoginComponent,
+    NewProjectComponent
   ],
   imports: [
     BrowserModule,
