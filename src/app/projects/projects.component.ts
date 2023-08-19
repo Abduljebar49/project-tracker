@@ -3,6 +3,7 @@ import { Project } from '../model/project.model';
 import { ModalDismissReasons, NgbDatepickerModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormGroup } from '@angular/forms';
 import { FormlyFieldConfig } from '@ngx-formly/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -12,19 +13,20 @@ import { FormlyFieldConfig } from '@ngx-formly/core';
 export class ProjectsComponent implements OnInit {
 	closeResult = '';
 
-	constructor(private modalService: NgbModal) {}
+	constructor(private modalService: NgbModal, private router:Router) {}
 
   ngOnInit(): void {}
 
-	open(content:any) {
-		this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then(
-			(result:any) => {
-				this.closeResult = `Closed with: ${result}`;
-			},
-			(reason) => {
-				this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-			},
-		);
+	open() {
+    this.router.navigateByUrl("project/register");
+		// this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then(
+		// 	(result:any) => {
+		// 		this.closeResult = `Closed with: ${result}`;
+		// 	},
+		// 	(reason) => {
+		// 		this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+		// 	},
+		// );
 	}
 
 	private getDismissReason(reason: any): string {
